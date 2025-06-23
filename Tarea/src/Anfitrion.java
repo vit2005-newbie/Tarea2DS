@@ -1,4 +1,10 @@
+import java.util.List;
+
 public class Anfitrion extends Usuario {
+    public Anfitrion(String nombre, String correo, String telefono) {
+        super(nombre, correo, telefono);
+    }
+
     private List<Propiedad> propiedades;
     
     public void agregarPropiedad(Propiedad propiedad) {
