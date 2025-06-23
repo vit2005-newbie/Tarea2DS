@@ -9,7 +9,7 @@ public class SoporteLegal extends Usuario implements ManejoDeIncidentes {
         
     }
 
-    //@Override
+    @Override
     public void escalar(Incidente incidente, Usuario persona) {
         System.out.println("Soporte legal escala el incidente a: " + persona.getNombre());
         
@@ -17,7 +17,7 @@ public class SoporteLegal extends Usuario implements ManejoDeIncidentes {
 
     @Override
     public void cerrarIncidente(Incidente incidente, String resolucion) {
-        incidente.setResolucion(resolucion);
+        //incidente.setResolucion(resolucion);
         System.out.println("Soporte legal cerró el incidente con resolución: " + resolucion);
         
     }
