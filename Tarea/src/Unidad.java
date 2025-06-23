@@ -34,12 +34,4 @@ public class Unidad {
     public void agregarReserva(Reserva reserva) {
         reservas.add(reserva);
     }
-
-    public Date getFechaInicio() {
-        return reservas.isEmpty() ? null : reservas.get(0).getFechaInicio();
-    }
-
-    public Date getFechaFin() {
-        return reservas.isEmpty() ? null : reservas.get(reservas.size() - 1).getFechaFin();
-    }
 }
