@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class Unidad {
@@ -33,5 +34,8 @@ public class Unidad {
 
     public void agregarReserva(Reserva reserva) {
         reservas.add(reserva);
+    }
+     public double getPrecioPorNoche() {
+        return precioPorNoche;
     }
 }
