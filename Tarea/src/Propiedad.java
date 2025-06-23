@@ -44,4 +44,9 @@ public class Propiedad {
         return disponibles;
     }
 
+    public void agregarResena(Resena resena) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'agregarResena'");
+    }
+
 }

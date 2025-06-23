@@ -37,12 +37,15 @@ public class Huesped extends Usuario{
         return resena;
     }
     
-    private boolean haEstadoEnPropiedad(Propiedad propiedad) {
-        return reservas.stream()
-                .anyMatch(r -> r.getUnidad().getPropiedad().equals(propiedad) && 
-                r.getFechaFin().isBefore(LocalDate.now()));
+private boolean haEstadoEnPropiedad(Propiedad propiedad) {
+    // Verifica simplemente si existe alguna reserva para la propiedad
+    for (Reserva reserva : reservas) {
+        if (reserva.getUnidad().getPropiedad().equals(propiedad)) {
+            return true;
+        }
     }
-    
+    return false;
+}
     public List<Resena> getResenas() {
         return new ArrayList<>(resenas);
     }
