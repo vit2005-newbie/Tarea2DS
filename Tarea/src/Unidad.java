@@ -35,7 +35,7 @@ public class Unidad {
     public void agregarReserva(Reserva reserva) {
         reservas.add(reserva);
     }
-    public double getPrecioPorNoche() {
-        return this.precioPorNoche;
+     public double getPrecioPorNoche() {
+        return precioPorNoche;
     }
 }
