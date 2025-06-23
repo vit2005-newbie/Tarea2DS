@@ -7,6 +7,10 @@ public class Incidente implements ManejoDeIncidentes {
     private Huesped reportadoPor;
     private Propiedad propiedad;
 
+    public Incidente(String descripcion2, Huesped huesped, Propiedad propiedad2) {
+        //TODO Auto-generated constructor stub
+    }
+
     @Override
     public void revisarIncidente(Incidente incidente) {
     }
@@ -61,5 +65,10 @@ public class Incidente implements ManejoDeIncidentes {
 
     public void setPropiedad(Propiedad propiedad) {
         this.propiedad = propiedad;
+    }
+
+    public void setResolucion(String resolucion) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setResolucion'");
     }
 }

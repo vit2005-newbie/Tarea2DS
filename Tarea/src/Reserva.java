@@ -33,4 +33,9 @@ public class Reserva {
         return fechaInicio; }
     public Date getFechaFin() { 
         return fechaFin; }
+
+    public Resena getUnidad() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getUnidad'");
+    }
 }
